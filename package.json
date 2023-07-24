@@ -1,0 +1,32 @@
+{
+  "name": "not-bad-dark-theme",
+  "displayName": "not bad dark theme",
+  "description": "一个还不错的黑暗主题",
+  "version": "0.0.2",
+  "publisher": "lzdml",
+  "icon": "theme.jpg",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "scripts": {
+    "install vsce": "pnpm install vsce -g --save vsce",
+    "build": "vsce package",
+    "publish": "vsce publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lzdml/not-bad-dark-theme.git"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "not-bad-dark-theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/not-bad-dark-theme-color-theme.json"
+      }
+    ]
+  }
+}
